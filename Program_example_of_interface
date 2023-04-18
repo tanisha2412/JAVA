@@ -1,0 +1,25 @@
+interface FirstInterface{
+    public void myMethod();
+}
+
+interface SecondInterface{
+    public void myOtherMethod();
+}
+
+class Democlass implements FirstInterface,SecondInterface{
+    public void myMethod(){
+        System.out.println("Some text...");
+    }
+
+    public void myOtherMethod(){
+        System.out.println("Some other text...");
+    }
+}
+
+class Main{
+    public static void main(String[ ] args){
+        Democlass myobj=new Democlass();
+        myobj.myMethod();
+        myobj.myOtherMethod();
+    }
+}
